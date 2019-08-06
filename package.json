@@ -1,0 +1,9 @@
+{
+  "name": "gumballmachine",
+  "version": "1.0.0",
+  "description": "Bite-Size, Self-Serve Hypermedia",
+  "main": "gumballmachine.js",
+  "repository": "https://github.com/jazzyjackson/gumballmachine.git",
+  "author": "Colten Jackson <jazzyjackson@gmail.com>",
+  "license": "Apache-2.0"
+}
