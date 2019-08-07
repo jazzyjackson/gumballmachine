@@ -71,6 +71,29 @@ if(process.argv[2]){
 		mothercontext = require(`./package.json`)
 }
 
+let mothercontexthash = crypto.createHash('sha1')
+															.update(JSON.stringify(mothercontext))
+															.digest('hex')
+
+
+try {
+	fs.statSync(path.join(os.tmpdir(), mothercontexthash, 'package.json'))
+}
+catch {
+	fs.mkdir(path.join(os.tmpdir(), mothercontexthash))
+
+}
+
+// mothercontext.system
+// mothercontext.magic
+
+let switchDependencies = mothercontext.switch.map(e => e.as)
+let magicDependencies  = Object.entries(mothercontext.magic).map(e => e.pop())
+
+// create a temp directory, find one that matches current mothercntext hash
+
+
+
 console.log(mothercontext)
 /**
 Find file given by arg
