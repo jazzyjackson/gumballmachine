@@ -1,0 +1,114 @@
+	body {
+			width: 100vw;
+			height: 100vh;
+			background: #1c355e;
+			margin: 0;
+			padding: 0;
+		}
+		#hero {
+			display: flex;
+			margin:16px;
+			background: white;
+		}
+		#logo {
+			display: inline-block;
+			width: 250px;
+			max-height: 50%;
+			margin: 10px;
+		}
+		#tagline {
+			display: inline-block;
+			width: Calc(100% - 250px);
+			margin-top: 80px;
+		}
+		#tagline img {
+			width: 100%;
+		}
+		#tagline h1 {
+			color: #1c355e;
+			font-family: monospace;
+			font-variant: small-caps;
+			position: relative;
+			text-align: center;
+		}
+		#tagline h1:first-of-type {
+			right: 27px;
+		}
+		#tagline h1:last-child {
+			left: 27px;
+		}
+		#g1306,
+		#g1310,
+		#g1314,
+		#g1318, 
+		#g1322,
+		#g1326 {
+			transform-origin: center;
+			transform: rotate(0deg);
+			transform-box: fill-box;
+			animation: spin 30s linear infinite;
+			/*transition: transform 1s;*/
+		}
+		#g1314 {
+			animation: spin 9s linear infinite;
+		}
+
+		#g1310 {
+			animation: spin 15s linear infinite;
+		}
+
+		#g1306 {
+			animation: spin 22s linear infinite;
+		}
+
+		#g1318 {
+			animation: spin 32s linear infinite;
+		}
+		#g1322 {
+			animation: spin 39s linear infinite;
+		}
+		#g1326 {
+			animation: spin 60s linear infinite;
+		}
+		@keyframes spin {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		#forwho {
+			display: flex;
+			margin: 16px;
+		}
+
+		#forwho > div {
+			/*background: white;*/
+			width: 50%;
+			border: 2px solid white;
+		}
+
+		#forwho h1 {
+			font-family: monospace;
+			font-variant: small-caps;
+			color: white;
+			text-align: center;
+		}
+
+		#webmaster {
+			margin-right: 16px;
+		}
+		#noosphere {
+			margin-left: 16px;
+		}
+
+		@media only screen and (max-width:666px) {
+			#logo {
+				width: 125px;
+			}
+
+			#tagline {
+				width: Calc(100% - 125px);
+				margin-top: 0;
+
+			}
+		}
