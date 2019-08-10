@@ -1,9 +1,17 @@
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	html {
+		height: 100vh;
+		width: 100vw;
+		overflow: hidden;
+	}
 	body {
-			width: 100vw;
-			height: 100vh;
+			min-width: 100%;
+			min-height: 100%;
 			background: #1c355e;
-			margin: 0;
-			padding: 0;
 		}
 		#hero {
 			display: flex;
@@ -111,4 +119,4 @@
 				margin-top: 0;
 
 			}
-		}
+		}	}
